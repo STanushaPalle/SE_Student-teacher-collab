@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="search-container">
+            <input type="text" placeholder="look for a team..." class="search-box">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <button class="create-team-btn">+ Create Team</button>
+        <div class="dropdown">
+            <button class="dropdown-btn">v</button>
+            <div class="dropdown-content">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="join-team.html">Join Team</a>
+                <a href="search-mentor.html">Search Mentor</a>
+            </div>
+        </div>
+        <div class="profile-icon">
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="notification-tabs">
+            <div class="tab active">Team Join Requests</div>
+            <div class="tab">Mentor Updates</div>
+        </div>
+        
+        <div class="notification-container">
+            <div class="request-cards">
+                <div class="request-card">
+                    <div class="request-info">
+                        <p>AI Based Resume Analyzer has asked you to join their team.</p>
+                    </div>
+                    <div class="request-actions">
+                        <button class="accept-btn">Accept</button>
+                        <button class="decline-btn">Decline</button>
+                    </div>
+                </div>
+                
+                <div class="request-card">
+                    <div class="request-info">
+                        <p>AI Based Resume Analyzer has asked you to join their team.</p>
+                    </div>
+                    <div class="request-actions">
+                        <button class="accept-btn">Accept</button>
+                        <button class="decline-btn">Decline</button>
+                    </div>
+                </div>
+                
+                <div class="request-card">
+                    <div class="request-info">
+                        <p>AI Based Resume Analyzer has asked you to join their team.</p>
+                    </div>
+                    <div class="request-actions">
+                        <button class="accept-btn">Accept</button>
+                        <button class="decline-btn">Decline</button>
+                    </div>
+                </div>
+                
+                <div class="status-card">
+                    <p>Your request to join the team 'IoT based Smart Farming System' has been received. The team leader will review it shortly.</p>
+                </div>
+                
+                <div class="status-card">
+                    <p>Your request to join the team 'IoT based Smart Farming System' has been received. The team leader will review it shortly.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

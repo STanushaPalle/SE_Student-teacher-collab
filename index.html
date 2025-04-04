@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-image">
+            <!-- You'll need to replace this with your actual image -->
+            <img src="assets/login-image.jpg" alt="Login Image">
+        </div>
+        <div class="login-form-container">
+            <div class="login-tabs">
+                <div class="tab">Mentor</div>
+                <div class="tab active">Student</div>
+            </div>
+            <div class="login-form">
+                <h2>LOGIN</h2>
+                <div class="divider"></div>
+                <div class="form-group">
+                    <label for="username">User</label>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <button class="login-btn" onclick="location.href='create-team.html'">LOGIN</button>
+                <p class="signup-link">Don't have an account? <a href="#">Sign up here!</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

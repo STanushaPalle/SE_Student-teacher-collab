@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Molengo', sans-serif;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+/* Common styles */
+.blue-btn {
+  background-color: #000658;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Login Page styles */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login-tabs {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  width: 60%;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.tab.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.login-form {
+  background-color: #000658;
+  border-radius: 10px;
+  padding: 30px;
+  width: 60%;
+  border: 2px solid #ccc;
+}
+
+.login-form h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  background-color: #D7D8E0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  flex: 1;
+  color: #333;
+}
+
+.form-group input {
+  flex: 2;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #EFEFEF;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.signup-link {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.signup-link a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Header styles */
+.header {
+  background-color: #000658;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.search-container {
+  flex: 1;
+  position: relative;
+}
+
+.search-box {
+  width: 80%;
+  padding: 8px 30px 8px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.create-team-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  margin-right: 15px;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: #000658;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Create Team page styles */
+.main-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.create-team-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.icon-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon-container i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.toggle-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000658;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Join Team page styles */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 10px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.project-info p {
+  margin-bottom: 10px;
+}
+
+.request-btn {
+  margin-top: 10px;
+}
+
+/* Project details popup */
+.project-details-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 50%;
+  max-height: 60%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Search Mentor page styles */
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mentor-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mentor-card h3 {
+  margin-bottom: 10px;
+}
+
+.mentor-card p {
+  margin-bottom: 5px;
+}
+
+/* Dashboard page styles */
+.dashboard-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.dashboard-main {
+  flex: 3;
+}
+
+.dashboard-sidebar {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-sidebar h2 {
+  color: #000658;
+  margin-bottom: 20px;
+}
+
+.dashboard-sidebar h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-sidebar ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.green-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.team-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.three-dots {
+  cursor: pointer;
+}
+
+.request-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.request-info {
+  flex: 3;
+}
+
+.request-actions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.accept-btn {
+  background-color: white;
+  color: green;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.decline-btn {
+  background-color: white;
+  color: red;
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Notifications page styles */
+.notification-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.notification-tabs .tab {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.notification-tabs .tab.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.status-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .login-container {
+      flex-direction: column;
+  }
+  
+  .login-form {
+      width: 80%;
+  }
+  
+  .project-card {
+      width: 100%;
+  }
+  
+  .mentor-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dashboard-container {
+      flex-direction: column;
+  }
+  
+  .popup-content {
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentor-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .request-card {
+      flex-direction: column;
+  }
+  
+  .request-actions {
+      flex-direction: row;
+      margin-top: 15px;
+  }
+}

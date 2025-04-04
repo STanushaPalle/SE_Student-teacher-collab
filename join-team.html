@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Team</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="search-container">
+            <input type="text" placeholder="look for a team..." class="search-box">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <button class="create-team-btn">+ Create Team</button>
+        <div class="dropdown">
+            <button class="dropdown-btn">v</button>
+            <div class="dropdown-content">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="notifications.html">Notifications</a>
+                <a href="join-team.html">Join Team</a>
+                <a href="search-mentor.html">Search Mentor</a>
+            </div>
+        </div>
+        <div class="profile-icon">
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+
+    <div class="main-container" id="join-team-container">
+        <div class="project-cards">
+            <div class="project-card" onclick="showProjectDetails()">
+                <div class="project-info">
+                    <p><strong>Project Name:</strong> AI-Powered Chatbot for Mental Health Support</p>
+                    <p><strong>Project Type:</strong> 3-credit Research Paper</p>
+                    <p><strong>Domain:</strong> Artificial Intelligence</p>
+                    <p><strong>Description:</strong> Developing an AI-based chatbot to provide emotional support and mental health resources using natural language procession...</p>
+                    <button class="blue-btn request-btn">Request to join</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <p><strong>Project Name:</strong> Green Energy Monitoring System</p>
+                    <p><strong>Project Type:</strong> 5-Credit Project</p>
+                    <p><strong>Domain:</strong> IoT & Renewable Energy</p>
+                    <p><strong>Description:</strong> Designing a monitoring system for renewable energy sources to track energy production and consumption using IoT...</p>
+                    <button class="blue-btn request-btn">Request to join</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <p><strong>Project Name:</strong> Smart Learning Platform</p>
+                    <p><strong>Project Type:</strong> 4-Credit Project</p>
+                    <p><strong>Domain:</strong> Education Technology</p>
+                    <p><strong>Description:</strong> Creating an interactive learning platform that adapts to student learning styles and provides personalized content...</p>
+                    <button class="blue-btn request-btn">Request to join</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <p><strong>Project Name:</strong> Healthcare Data Analytics</p>
+                    <p><strong>Project Type:</strong> 3-Credit Research</p>
+                    <p><strong>Domain:</strong> Healthcare & Data Science</p>
+                    <p><strong>Description:</strong> Analyzing healthcare data to identify patterns and provide insights for improved patient care and resource allocation...</p>
+                    <button class="blue-btn request-btn">Request to join</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="project-details-popup" id="project-details">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeProjectDetails()">&times;</span>
+            <h3>Team name: Green Energy Monitoring System</h3>
+            <p>Designing a monitoring system for renewable energy sources (Solar and wind) to track energy production and consumption using IoT and data visualization tools. Energy production and consumption using IoT and data visualization tools.</p>
+            <p><strong>Project Type:</strong> 5-Credit Project</p>
+            <p><strong>Skills:</strong> IoT, Python, MATLAB</p>
+            <p><strong>Request status:</strong> 4 students (Electrical Engineering and Computer Science majors).</p>
+            <p><strong>Mentor Needed for:</strong> Guidance on IoT system design and energy efficiency optimization.</p>
+            <p><strong>Request Static:</strong> Pending Mentor Approval.</p>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
