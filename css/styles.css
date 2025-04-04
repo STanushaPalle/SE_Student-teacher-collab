@@ -384,18 +384,15 @@ input:checked + .slider:before {
 }
 
 .popup-content h3 {
-  font-size: 40px; /* Larger font size for headings */
   font-weight: bold;
 }
 
 .popup-content p {
-  font-size: 28px; /* Increase font size for paragraphs */
   line-height: 1.6; /* Improve readability */
   margin-bottom: 20px; 
 }
 
 .popup-content strong {
-  font-size: 28px; /* Make bold text more prominent */
 }
 
 
