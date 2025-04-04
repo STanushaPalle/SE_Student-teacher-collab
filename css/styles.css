@@ -181,6 +181,7 @@ body {
   cursor: pointer;
 }
 
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -189,7 +190,12 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
+  
+  /* Move dropdown to the left */
+  right: 0; /* Aligns the right edge of the dropdown with the button */
+  transform: translateX(-100%); /* Shifts the entire dropdown to the left */
 }
+
 
 .dropdown:hover .dropdown-content {
   display: block;
