@@ -193,7 +193,7 @@ body {
   
   /* Move dropdown to the left */
   right: 0; /* Aligns the right edge of the dropdown with the button */
-  transform: translateX(-100%); /* Shifts the entire dropdown to the left */
+  transform: translateX(0%); /* Shifts the entire dropdown to the left */
 }
 
 
